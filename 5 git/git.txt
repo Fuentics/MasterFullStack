@@ -1,0 +1,7 @@
+Después de realizar cambios
+git status			>>>	para saber si hay que subir archivos, aparecerán en rojo y como modified:
+git add .			>>>	sube todos los archivos que existen en el repositorio local
+git commit -m ""		>>>	mensaje de la fotografía que se tomó
+git log			>>>	mirar si está sincronizado	HEAD -> master main		
+git push main master	>>>	para subir al repositorio remoto (por defecto es origin en lugar de main)	Si estoy trabajando en un sólo compu
+git pull main master	>>>	para saber si está actualizado (por defecto es origin en lugar de main)		Si estoy trabajando en varias compu (halar)

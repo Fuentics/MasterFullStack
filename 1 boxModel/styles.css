@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.block{
+    border: solid 2px rgb(39, 150, 44);
+    padding: 5px;
+    margin: 2px;
+    background-color: yellow;
+    /* width: 50%; */
+}
+.inline{
+    border: solid 2px rgb(27, 0, 148);
+    padding: 5px;
+    margin: 2px;
+    background-color: yellow;
+    /* width: 100%; */
+}
+strong{
+    /* display: block; */
+    background: linear-gradient(to right, green, yellow, orange, red);
+}
+p{
+    /* display: inline; */
+    background: linear-gradient(to right, green, yellow, orange, red);
+}

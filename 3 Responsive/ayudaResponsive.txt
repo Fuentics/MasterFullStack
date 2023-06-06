@@ -1,0 +1,20 @@
+- Viewport	>>>	El área del navegador
+- Portrait	>>>	orientación Vertical 94%
+- Landscape	>>>	orientación Horizontal 6%
+
+## UNIDADES EN CSS
+
+Son relativas al comportamiento de algo
+Unidades relativas	>>>	porcentaje (%)	>>>	trabajan con relación al contenedor padre
+					tamaños de letra (em & rem)	>>>	em hace referencia al contenedor padre y rem a la hoja completa
+					tamaños de caracteres (ex & ch)
+					dimensiones de tamaño de ventana (vw & vh)
+					tamaño máximo de ventana (vmax)
+					tamaño mínimo de ventana (vmin)
+Unidades absolutas	>>>	píxeles (px)
+					pulgadas (in)
+					centímetros (cm)
+					milímetros (mm)
+					puntos (pt)
+					pica (pc)
+

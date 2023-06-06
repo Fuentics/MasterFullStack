@@ -1,0 +1,20 @@
+.contenedor-flexible{
+    display: flex;
+    background-color: blueviolet;
+    border: 5px solid black;
+    padding: 10px;
+    margin: 5px;
+}
+.contenedor-hijo{
+    background-color: yellow;
+    border: 5px solid black;
+    padding: 10px;
+    margin: 5px;
+}
+.container-wrapeado{
+    flex-wrap: wrap; /*(envolver) La propiedad flex-wrap es útil para controlar cómo se ajustan los elementos hijos en un contenedor flexible cuando el espacio horizontal es limitado. Tiene 3 valores: nowrap, wrap y wrap-reverse*/
+    
+}
+.container-grow{
+    flex-grow: 2; /*la propiedad flex-grow es útil para controlar la distribución del espacio disponible en un contenedor flexible y permite asignar más espacio a ciertos elementos hijos según su importancia o prioridad de visualización.*/
+}

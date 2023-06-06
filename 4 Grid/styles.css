@@ -1,0 +1,23 @@
+.contenedor-grid{
+    display: grid;
+    grid-template-columns: repeat(3, auto) 20vw;     /*cantidad de columnas y tamaño*/
+    grid-template-rows: 20vh 60vh 20vh;              /*cantidad de filas y tamaño*/
+    gap: 0;              /*tamaño de la línea que separa las filas y las columnas*/
+    grid-template-areas:    /*define la cantidad de columnas que puede ocupar una etiqueta*/
+        "header header header header"   /*de las 4 columnas definidas header ocupa las 4 (las combina)*/
+        "main main main aside"
+        "footer footer footer aside";
+}
+
+header{
+    grid-area: header;  /*se define el área de grid a esta etiqueta para usarla en grid-template-areas*/
+}
+footer{
+    grid-area: footer;
+}
+main{
+    grid-area: main;
+}
+aside{
+    grid-area: aside ;
+}

@@ -1,0 +1,34 @@
+#header{
+    width: 50vw;        /*dimensiones de tamaño de pantalla a lo ancho vw*/
+    /*height: 50vh;       dimensiones de tamaño de pantalla a lo alto vh*/
+    background-color: black;
+    height: 10rem;       /*3 veces del tamaño de letra que viene por defecto (16px)*/
+    margin: auto;       /*para centrar el elemento*/
+    padding: 5rem 0.5rem 0 0.5rem;
+}
+#titulo{
+    color: white;
+    margin: auto;
+    text-align: center;
+}
+
+@media screen and (max-width: 1024px) {     /*cuando la condición (max-width:1024px) se cumpla haga...*/
+    #header{
+        background-color: blue;
+    }
+}
+@media screen and (max-width: 768px) {
+    #header{
+        background-color: green;
+    }
+}
+@media screen and (max-width: 480px) {
+    #header{
+        background-color: red;
+    }
+}
+@media screen and (max-width: 320px) {
+    #header{
+        background-color: saddlebrown;
+    }   
+}
