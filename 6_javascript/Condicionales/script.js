@@ -131,29 +131,61 @@ function ejecutarCodigo(opcion) {
       if (programa === 1 && beca === 1 || programa === 1 && beca === 2 || programa === 1 && beca === 3) {
         valorCourse = (valorCourse - (valorCourse * valorBeca / 100));
         totalCourse = valorCourse * duraCourse;
-        alert(`El valor MENSUAL de COURSE con el descuento del ${valorBeca}% es $${valorCourse}`);
+        alert(`El valor MENSUAL de COURSE con el descuento del ${valorBeca}% es: $${valorCourse}`);
         alert(`El valor TOTAL de COURSE con una duración de 2 meses es: $${totalCourse}`);
       } else if (programa === 2 && beca === 1 || programa === 2 && beca === 2 || programa === 2 && beca === 3) {
         valorCarrera = (valorCarrera - (valorCarrera * valorBeca / 100));
         totalCarrera = valorCarrera * duraCarrera;
-        alert(`El valor mensual de CARRERA con el descuento del ${valorBeca}% es $${valorCarrera}`);
+        alert(`El valor mensual de CARRERA con el descuento del ${valorBeca}% es: $${valorCarrera}`);
         alert(`El valor TOTAL de CARRERA con una duración de 6 meses es: $${totalCarrera}`);
       } else if (programa === 3 && beca === 1 || programa === 3 && beca === 2 || programa === 3 && beca === 3) {
         valorMaster = (valorMaster - (valorMaster * valorBeca / 100));
         totalMaster = valorMaster * duraMaster;
-        alert(`El valor mensual de MASTER con el descuento del ${valorBeca}% es $${valorMaster}`);
+        alert(`El valor mensual de MASTER con el descuento del ${valorBeca}% es: $${valorMaster}`);
         alert(`El valor TOTAL de MASTER con una duración de 12 meses es: $${totalMaster}`);
+      } else {
+        alert("Ingrese las opciones correctas (1, 2 o 3)");
       }
-
-
-
-
-
-
-
-
-
       break;
+      case "option11":
+        let tipo_de_vehiculo = prompt("INGRESE TIPO DE VEHÍCULO:\n1. Coche\n2. Moto\n3. Autobús");
+        let precioLitro = 0;
+
+        if (tipo_de_vehiculo == 1){
+          precioLitro = 0.20;
+        } else if (tipo_de_vehiculo == 2){
+          precioLitro = 0.10;
+        } else if (tipo_de_vehiculo == 3){
+          precioLitro = 0.5;
+        }
+
+        let kms_recorridos = prompt("¿Cuántos kilometros recorrió?");
+        let litros_consumidos = prompt("Cuántos litros de gasolina consumió");
+        
+        let extra = 0;
+        if (litros_consumidos > 0 && litros_consumidos < 100){
+          extra += 5;
+        } else if (litros_consumidos > 100) {
+          extra += 10;
+        }
+        
+        let total_a_pagar = 0;
+        if(tipo_de_vehiculo == 1 || tipo_de_vehiculo == 2 || tipo_de_vehiculo == 3){
+          total_a_pagar = (precioLitro * kms_recorridos) + extra; 
+          alert(`El total a pagar es ${total_a_pagar}`);
+        }
+
+
+
+
+
+        // if (tipo_de_vehiculo === 1 || tipo_de_vehiculo === 2 || tipo_de_vehiculo === 3){
+        //   total_a_pagar = (precioKm * kms) + extra;
+
+        // }
+
+        
+
     default:
       console.log("Opción inválida");
   }
